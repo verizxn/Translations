@@ -1,19 +1,16 @@
 <?php
 
+namespace Verlzon\Translations;
+
 class Translations {
+	private $translations = [];
 	private $strings = [];
 	private $defaults = [];
 
-	public function __construct($language){
-		if(!file_exists(__DIR__."/translations/$language.json")) $language = 'en';
-		
-		$this->strings = $this->loadStrings($language);
-		$this->defaults = $this->loadStrings('en');
-	}
-
-	public function loadStrings($language){
-		$strings = file_get_contents(__DIR__."/translations/$language.json");
-		return json_decode($strings, true);
+	public function __construct($translations, $language){
+		$this->translations = $translations;
+		$this->strings = $this->translations[$language];
+		$this->defaults = $this->translations['default'];
 	}
 
 	public function getString($name, $vars = []){
