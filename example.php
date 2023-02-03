@@ -2,12 +2,13 @@
 
 require_once __DIR__.'/vendor/autoload.php';
 
-// Load strings from file
-$english = file_get_contents(__DIR__.'/translations/en.json');
-$english = json_decode($english, true);
+$strings = new Verlzon\Translations\Translations('en'); // Set language
+$strings->loadFromJSON('en', __DIR__.'/translations/en.json'); // Import English strings from json
+$strings->loadFromArray('it', [
+	'test' => 'Questo è un test in: $var.'
+]); // Import Italian strings from array
 
-// Load the strings
-$translations = ['default' => $english, 'en' => $english];
+echo $strings->getString('test', ['php']).PHP_EOL; // Prints in english
 
-$strings = new Verlzon\Translations\Translations($translations, 'en');
-echo $strings->getString('test').PHP_EOL;
+$strings->language = 'it'; //switch language into italian
+echo $strings->getString('test', ['php']).PHP_EOL; // Prints in italian
