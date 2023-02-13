@@ -1,5 +1,5 @@
 # Translations
-A free library that allows you to create your projects and localize it in various languages.
+A library that allows you to localize your projects in various languages.
 
 ## Installation
 ```bash
