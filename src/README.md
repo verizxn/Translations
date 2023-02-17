@@ -1,1 +1,1 @@
-[<- Back](https://github.com/VERlZON/Translations)
+[<- Back](https://github.com/verizxn/Translations)

@@ -1,15 +1,15 @@
 {
-    "name": "verlzon/translations",
+    "name": "verizxn/translations",
     "description": "A free library that allows you to create your projects and localize it in various languages.",
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Verlzon\\Translations\\": "src/"
+            "verizxn\\Translations\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Verlzon"
+            "name": "verizxn"
         }
     ],
     "require": {}

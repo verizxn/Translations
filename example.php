@@ -2,7 +2,7 @@
 
 require_once __DIR__.'/vendor/autoload.php';
 
-$strings = new Verlzon\Translations\Translations('en'); // Set language
+$strings = new verizxn\Translations\Translations('en'); // Set language
 $strings->loadFromJSON('en', __DIR__.'/translations/en.json'); // Import English strings from json
 $strings->loadFromArray('it', [
 	'test' => 'Questo è un test in: $var.'

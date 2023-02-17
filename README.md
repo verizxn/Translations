@@ -14,12 +14,12 @@ In your `composer.json` require the project:
 	"repositories": [
 		{
 			"type": "vcs",
-			"url":  "https://github.com/VERlZON/Translations"
+			"url":  "https://github.com/verizxn/Translations"
 		}
 	],
 	...
 	"require": {
-		"verlzon/translations": "dev-main"
+		"verizxn/translations": "dev-main"
 	}
 }
 ```

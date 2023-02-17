@@ -1,6 +1,6 @@
 <?php
 
-namespace Verlzon\Translations;
+namespace verizxn\Translations;
 
 class Translations {
 	private $strings = [];
