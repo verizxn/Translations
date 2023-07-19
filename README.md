@@ -10,19 +10,18 @@ $ composer install
 In your `composer.json` require the project:
 ```json
 {
-	...
-	"repositories": [
-		{
-			"type": "vcs",
-			"url":  "https://github.com/verizxn/Translations"
-		}
-	],
-	...
-	"require": {
-		"verizxn/translations": "dev-main"
-	}
+    ...
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/verizxn/Translations"
+        }
+    ],
+    "require": {
+        "verizxn/translations": "dev-main"
+    }
 }
 ```
 
 ## Usage
-Check `example.php` and `translations/en.json`.
+Check the example file on `tests/index.php`.
