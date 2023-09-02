@@ -1,3 +1,5 @@
+![PHP Composer build](https://github.com/verizxn/Translations/actions/workflows/php.yml/badge.svg)
+
 # Translations
 A library that allows you to localize your projects in various languages.
 
